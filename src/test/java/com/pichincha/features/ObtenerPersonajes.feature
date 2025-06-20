@@ -1,4 +1,4 @@
-@REQ_TPSRE-000 @getCharacter
+@REQ_TPSRE-000 @getCharacters
 Feature: Marvel Characters Management
 
   Background:
@@ -27,7 +27,7 @@ Feature: Marvel Characters Management
     * match response == []
 
 
-  @id:3 @getCharacterById @casoPositivoPersonajeEspecifico
+  @id:3 @getCharacterById @casoPositivo
   Scenario: T-API-TPSRE-000-CA1-Obtener personaje por ID
     Given url 'http://bp-se-test-cabcd9b246a5.herokuapp.com/testuser/api/characters/' + characterId
     And header Content-Type = 'application/json'

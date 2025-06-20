@@ -32,7 +32,7 @@ public class TestRunner {
         ControlsExecutionParallelAgents.featuresSegmentation();
 
         Results results = Runner.path("src/test/java/com/pichincha")
-                .tags("@createCharacterMissingRequiredFields").outputCucumberJson(true).parallel(1);
+                .tags("@casoPositivo").outputCucumberJson(true).parallel(1);
 
         String karateOutputPath = "build/karate-reports";
         generateReport(karateOutputPath);

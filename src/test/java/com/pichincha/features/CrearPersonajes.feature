@@ -19,7 +19,7 @@ Feature: Marvel Characters Management
     * print response
 
 
-  @id:2 @createExistsCharacter @casoNegativoExistePersonaje
+  @id:2 @createExistsCharacter @casoNegativo
   Scenario: T-API-TPSRE-000-CA1-Crear Personaje Existente
     Given url 'http://bp-se-test-cabcd9b246a5.herokuapp.com/testuser/api/characters'
     And header Content-Type = 'application/json'
